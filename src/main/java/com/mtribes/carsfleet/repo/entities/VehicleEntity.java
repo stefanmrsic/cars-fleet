@@ -12,9 +12,8 @@ public class VehicleEntity {
     @GeneratedValue(strategy= GenerationType.AUTO)
     private Long vehicleId;
     private String address;
-    @ManyToOne(fetch = FetchType.EAGER, optional = false)
+    @OneToOne(fetch = FetchType.EAGER,cascade=CascadeType.ALL)
     @JoinColumn(name = "coordinateId", nullable = false)
-    @OnDelete(action = OnDeleteAction.CASCADE)
     private CoordinatesEntity coordinates;
     private String engineType;
     private String exterior;

@@ -13,12 +13,12 @@ public class CoordinatesEntity {
     private Long coordinateId;
     private double latitude;
     private double longitude;
-    private double altitude;
+    private long altitude;
 
     protected CoordinatesEntity() {
     }
 
-    public CoordinatesEntity(double latitude, double longitude, double altitude) {
+    public CoordinatesEntity(double longitude, double latitude, long altitude) {
         this.latitude = latitude;
         this.longitude = longitude;
         this.altitude = altitude;
@@ -36,7 +36,7 @@ public class CoordinatesEntity {
         return longitude;
     }
 
-    public double getAltitude() {
+    public long getAltitude() {
         return altitude;
     }
 }
