@@ -5,20 +5,20 @@ Test application for MTribes
 https://cars-fleet.herokuapp.com/
 
 # Running locally
-Need maven installed
-Java JDK 1.8 or higher
+Need maven installed <br />
+Java JDK 1.8 or higher <br />
 
 # Commands
-mvn clean
-mvn compile
-mvn test
+mvn clean <br />
+mvn compile <br />
+mvn test <br />
 
-$java -jar target/cars-fleet-1.0.0-SNAPSHOT.jar
-OR
+$java -jar target/cars-fleet-1.0.0-SNAPSHOT.jar <br />
+OR <br />
 mvn spring-boot:run
 
 # Known improvements needed (didn't have the time :) )
-#Move external properties to Environment variables
-#Add builder objects validation
-#Add Flyway migration scripts and move DB from in memory H2 to stored relational DB
-#Upgrade frontend to use React or Angular
+-Move external properties to Environment variables <br />
+-Add builder objects validation <br />
+-Add Flyway migration scripts and move DB from in memory H2 to stored relational DB <br />
+-Upgrade frontend to use React or Angular <br />
