@@ -22,6 +22,8 @@ import org.springframework.test.web.servlet.MvcResult;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
@@ -82,7 +84,7 @@ public class CarsFleetControllerTest {
                 .name("n2")
                 .vin("vin2")
                 .coordinates(buildCoordinatesSvcResponse(2, 2, 0)).build();
-        return List.of(firstVehicle, secondVehicle);
+        return Arrays.asList(firstVehicle, secondVehicle);
 
     }
 
