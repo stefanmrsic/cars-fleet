@@ -18,7 +18,7 @@ OR
 mvn spring-boot:run
 
 # Known improvements needed (didn't have the time :) )
--Move external properties to Environment variables
--Add builder objects validation
--Add Flyway migration scripts and move DB from in memory H2 to stored relational DB
--Upgrade frontend to use React or Angular
+#Move external properties to Environment variables
+#Add builder objects validation
+#Add Flyway migration scripts and move DB from in memory H2 to stored relational DB
+#Upgrade frontend to use React or Angular
