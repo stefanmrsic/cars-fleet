@@ -1,0 +1,1 @@
+{"listOfCars":[{"address":"adr1","coordinates":{"latitude":1.0,"longitude":1.0,"altitude":0.0},"engineType":"e1","exterior":"ex1","fuel":10,"interior":"int1","name":"n1","vin":"vin1"},{"address":"adr2","coordinates":{"latitude":2.0,"longitude":2.0,"altitude":0.0},"engineType":"e2","exterior":"ex2","fuel":20,"interior":"int2","name":"n2","vin":"vin2"}]}
