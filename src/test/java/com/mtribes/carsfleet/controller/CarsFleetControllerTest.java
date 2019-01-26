@@ -55,7 +55,6 @@ public class CarsFleetControllerTest {
     @Test
     public void getCompleteFleetTest_TwoVehicles_OK() throws Exception {
         doReturn(buildTestFleetSvcResponse()).when(fleetService).getCompleteFleet();
-        //when(fleetService.getCompleteFleet()).thenReturn(buildTestFleetSvcResponse());
         MvcResult result = this.mockMvc.perform(get("/fleet")).andExpect(status().isOk()).andReturn();
         assertEquals(result.getResponse().getContentAsString(), loadCompleteFleetJsonFromFile());
     }

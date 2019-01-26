@@ -8,14 +8,13 @@ import com.mtribes.carsfleet.controller.dto.ImmutableVehicleCoordinate;
 import com.mtribes.carsfleet.service.FleetService;
 import com.mtribes.carsfleet.service.dto.GetFleetSVCResponse;
 import com.mtribes.carsfleet.service.dto.SingleVehicleSVCResponse;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.stream.Collectors;
 
-@Controller
+@RestController
 public class CarsFleetController {
 
     private FleetService fleetService;

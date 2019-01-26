@@ -10,6 +10,7 @@ import org.json.simple.parser.ParseException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration;
 
 import javax.annotation.PostConstruct;
 import java.io.FileReader;
@@ -17,8 +18,8 @@ import java.io.IOException;
 import java.util.List;
 import java.util.stream.Collectors;
 
-@SuppressWarnings("unchecked")
-@SpringBootApplication
+
+@SpringBootApplication(exclude = ErrorMvcAutoConfiguration.class)
 public class CarsFleetApplication {
 
     @Autowired
@@ -26,6 +27,7 @@ public class CarsFleetApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(CarsFleetApplication.class, args);
+
     }
 
 
