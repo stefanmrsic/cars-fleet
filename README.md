@@ -22,3 +22,4 @@ mvn spring-boot:run
 -Add builder objects validation <br />
 -Add Flyway migration scripts and move DB from in memory H2 to stored relational DB <br />
 -Upgrade frontend to use React or Angular <br />
+-Split monolith into several individual maven projects (with a parrent project), e.g. domain shouldn't have any external dependencies, spring, immutables etc.
